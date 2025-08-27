@@ -3,3 +3,5 @@ llmenv
 llmenv/*
 books/*
 books/
+chroma_db/
+chroma_db/*
