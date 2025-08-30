@@ -25,7 +25,7 @@ def convert(base_currency_value: int, conversion_rate: Annotated[float, Injected
 
 
 # Bind LLM with tools
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 llm_with_tools = llm.bind_tools([get_conversion_factor, convert])
 
 query = "What is the conversion factor between USD and NPR and based on that, can you convert 10 usd to npr?"
